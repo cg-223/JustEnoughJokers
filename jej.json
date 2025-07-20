@@ -1,7 +1,7 @@
 {
 	"id": "justenoughjokers", 
-	"name": "Just Enough jokers",
-	"author": ["cg", "cg223"],
+	"name": "Just Enough Jokers",
+	"author": ["cg"],
 	"description": "Too Many Jokers if it... had jokers",
 	"prefix": "jej", 
 	"main_file": "jej.lua", 

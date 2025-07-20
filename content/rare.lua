@@ -23,7 +23,7 @@ SMODS.Joker {
             local jkrs = {}
             for i, v in pairs(G.jokers.cards) do
                 if type(v.config.center.rarity) == "number" and rars[v.config.center.rarity] then
-                    table.insert(jkrs, v)
+                    table.insert(jkrs, v.config.center.rarity)
                 end
             end
 
