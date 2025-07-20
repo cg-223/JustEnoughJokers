@@ -1,0 +1,13 @@
+{
+	"id": "justenoughjokers", 
+	"name": "Just Enough jokers",
+	"author": ["cg", "cg223"],
+	"description": "Too Many Jokers if it... had jokers",
+	"prefix": "jej", 
+	"main_file": "jej.lua", 
+	"priority": 0, 
+	"badge_colour": "d4c920", 
+	"badge_text_colour": "262626",
+	"display_name": "J.E.J.",
+	"version": "0.0.0"
+}
