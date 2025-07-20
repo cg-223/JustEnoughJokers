@@ -12,10 +12,11 @@ return {
             j_jej_cleanfreak = {
                 name = "Clean Freak",
                 text = {
-                    "If all held {C:attention}Jokers{} are sorted",
-                    "by {C:red}Rarity{}, gives {X:mult, C:white}X#1#{} Mult",
-                    "{C:inactive}in ascending order",
-                    "{C:inactive}Modded rarities may be in any location"
+                    "If all held {C:attention}Jokers{}",
+                    "are sorted by {C:red}Rarity{},",
+                    "gives {X:mult,C:white}X#1#{} Mult",
+                    "{C:inactive}(In ascending order)",
+                    "{C:inactive,s:0.7}(Modded rarities are ignored)"
                 }
             }
         }
