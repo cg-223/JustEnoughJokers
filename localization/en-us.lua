@@ -57,7 +57,7 @@ return {
             j_jej_c4 = {
                 name = "C4",
                 text = {
-                    "{X:mult,C:white}X#1#{} Mult, destroys the",
+                    "{X:black,C:mult}X#1#{} Mult, destroys the",
                     "rightmost played card"
                 }
             },
@@ -85,7 +85,7 @@ return {
                     "Lose {C:red}$#1#{}, but",
                     "the next time you",
                     "gain {C:money}dollars{}, earn",
-                    "{C:attention}twice{} as much",
+                    "{X:money,C:black}X#2#{} as much",
                     "{C:inactive,s:0.7}stacks........."
                 }
             }

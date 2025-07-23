@@ -102,8 +102,8 @@ SMODS.Joker {
     rarity = 2,
     config = {
         extra = {
-            loss = 3,
-            gain = 20,
+            loss = 1,
+            gain = 10,
         }
     },
     loc_vars = function(self, info_queue, card)
@@ -127,19 +127,20 @@ SMODS.Consumable {
     key = "investment",
     set = "Spectral",
     loc_vars = function(self, info_queue, card)
-        return { vars = { card.ability.extra.dollars } }
+        return { vars = { card.ability.extra.dollars, card.ability.extra.mul } }
     end,
     config = {
         extra = {
-            dollars = 5,
+            dollars = 3,
+            mul = 1.3,
         }
     },
     use = function(self, card, area, copier)
         ease_dollars(-card.ability.extra.dollars)
         if G.GAME.cg_should_double then
-            G.GAME.cg_should_double = G.GAME.cg_should_double * 2
+            G.GAME.cg_should_double = G.GAME.cg_should_double * card.ability.extra.mul
         else
-            G.GAME.cg_should_double = 2
+            G.GAME.cg_should_double = card.ability.extra.mul
         end
     end,
     can_use = function(self, card)
@@ -157,11 +158,11 @@ function ease_dollars(mod, instant)
 end
 
 SMODS.Joker {
-    rarity = 3,
+    rarity = 2,
     key = "c4",
     config = {
         extra = {
-            xmult = 1.3,
+            xmult = 0.9,
         }
     },
     loc_vars = function (self, info_queue, card)
@@ -183,7 +184,7 @@ SMODS.Joker {
     key = "pizzahut",
     config = {
         extra = {
-            dollars = 7,
+            dollars = 6,
             time = 20,
             start_time = nil,
         }
